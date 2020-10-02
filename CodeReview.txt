@@ -1,0 +1,49 @@
+Code Review Lab03  
+
+In this program we work with a class called Dice.java that contains the private properties of a dice as it’s name, 
+
+it’s number of sides and it’s side up. 
+
+This class contains three different constructors. 
+
+We get private values of dice’s properties via getters and we set value to these properties via setters because they are all 
+
+private and we cannot change them outside the Dice class.
+
+
+We have a public method roll(), once called on a specific dice call another method that get a 
+
+random value between 1 and the number of sides of this dice. 
+
+  
+
+theoretical question: can you change the number of sides on dice, and if you do does it’s name change? 
+
+Yes we can do that with a method that can set up the number of sides and with this number of sides we  
+
+can change the name. 
+ 
+
+Example 
+
+public  void setUpNumSidesAndName(int numSides){ 
+
+  this.numSides = numSides; 
+
+  this.diceType = “{d”+numSides+”}”; 
+
+// The name will be now this.diceType 
+
+} 
+
+Finally, we try to simulate a yahtzee case with a rooling up 5 dices of 6 and we loop counting each roll 
+
+and we exit the loop once we have all sides up of the 5 dices having the same value. 
+
+Here the better loop to use is do while and of course not for loop because we don’t know how many loops 
+
+we are going to have and better than while loop because the loop must be at least once. 
+
+  
+
+ 
